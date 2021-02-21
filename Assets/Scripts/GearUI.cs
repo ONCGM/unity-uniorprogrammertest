@@ -16,19 +16,11 @@ public class GearUI : MonoBehaviour, IPointerDownHandler, IPointerUpHandler {
     private Camera gameCamera;
     private GearSlotUI slot;
 
+    // Initialization.
     private void Awake() {
         gameCamera = FindObjectOfType<Camera>();
         transform.localScale = Vector3.zero;
         transform.DOScale(Vector3.one, animationDuration).SetEase(Ease.OutSine);
-    }
-
-    private void OnTriggerEnter2D(Collider2D other) {
-        if(!other.GetComponent<GearSlotUI>() || other.GetComponent<GearSlotUI>() == slot) return;
-        slot = other.GetComponent<GearSlotUI>();
-        if(slot.HasGear) return;
-        slot.HasGear = true;
-        transform.position = slot.transform.position;
-        stickToMouse = false;
     }
 
     /// <summary>
@@ -36,17 +28,19 @@ public class GearUI : MonoBehaviour, IPointerDownHandler, IPointerUpHandler {
     /// </summary>
     public void DeSpawn() => transform.DOScale(Vector3.zero, animationDuration).SetEase(Ease.OutSine).onComplete = () => Destroy(gameObject);
 
+    // Updates the pointer position if the player is holding down the mouse button.
     private void Update() {
         if(!stickToMouse) return;
         var mousePosition = gameCamera.ScreenToWorldPoint(Input.mousePosition);
         transform.position = new Vector3(mousePosition.x, mousePosition.y, 0f);
     }
 
-    public void OnPointerDown(PointerEventData eventData) {
-        stickToMouse = true;
-        if(slot != null) slot.HasGear = false;
-        slot = null;
-    }
-
+    // Pointer Events.
+    public void OnPointerDown(PointerEventData eventData) => stickToMouse = true;
     public void OnPointerUp(PointerEventData eventData) => stickToMouse = false;
+    
+    /// <summary>
+    /// Releases the cursor lock. 
+    /// </summary>
+    public void ReleaseFromCursor() => stickToMouse = false;
 }

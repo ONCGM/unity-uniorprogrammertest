@@ -30,9 +30,8 @@ public class GearInventoryController : MonoBehaviour {
         foreach(var uiGear in FindObjectsOfType<GearUI>()) uiGear.DeSpawn();
 
         for(var i = 0; i < gearParents.Count; i++) {
-            if(gearPrefabs[i] != null) continue;
-            var gear = Instantiate(gearPrefabs[i], transform);
-            gear.transform.position = gearParents[i].transform.position;
+            if(gearPrefabs[i] == null) continue;
+            Instantiate(gearPrefabs[i], transform).transform.position = gearParents[i].transform.position;
         }
     }
 }

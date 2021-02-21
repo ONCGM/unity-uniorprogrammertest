@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdbb6c1d-992f-4e86-8136-7b7751345920" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.unity-junior-programmer-test/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity-junior-programmer-test/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.unity-junior-programmer-test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity-junior-programmer-test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/Gear Slot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/Gear Slot.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/Gears/Gear Item UI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/Gears/Gear Item UI.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GearInventoryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GearInventoryController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GearSlotUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GearSlotUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GearUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GearUI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +15,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gear.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GearSlotUI.cs" root0="FORCE_HIGHLIGHTING" />
@@ -25,8 +30,8 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/Gear.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GearInventoryController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GearSlot.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GearInventoryController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GearSlotUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GearUI.cs" />
     </changedPaths>
@@ -73,7 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1613917064291</updated>
-      <workItem from="1613917068869" duration="8251000" />
+      <workItem from="1613917068869" duration="9835000" />
     </task>
     <servers />
   </component>
