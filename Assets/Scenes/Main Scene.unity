@@ -427,6 +427,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6077121034909925790, guid: 9e7b186f1d670b64da92f7ca382c5d26,
+        type: 3}
+      propertyPath: m_Name
+      value: Gear Parent 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6478665818361814922, guid: 9e7b186f1d670b64da92f7ca382c5d26,
         type: 3}
       propertyPath: m_Name
@@ -437,6 +442,12 @@ PrefabInstance:
 --- !u!224 &264745615 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4799654116636532093, guid: 9e7b186f1d670b64da92f7ca382c5d26,
+    type: 3}
+  m_PrefabInstance: {fileID: 264745614}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &264745616 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8743931446865445996, guid: 9e7b186f1d670b64da92f7ca382c5d26,
     type: 3}
   m_PrefabInstance: {fileID: 264745614}
   m_PrefabAsset: {fileID: 0}
@@ -1525,7 +1536,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1128033273
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1861,6 +1872,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6077121034909925790, guid: 9e7b186f1d670b64da92f7ca382c5d26,
+        type: 3}
+      propertyPath: m_Name
+      value: Gear Parent 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6478665818361814922, guid: 9e7b186f1d670b64da92f7ca382c5d26,
         type: 3}
       propertyPath: m_Name
@@ -1871,6 +1887,12 @@ PrefabInstance:
 --- !u!224 &1174113768 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4799654116636532093, guid: 9e7b186f1d670b64da92f7ca382c5d26,
+    type: 3}
+  m_PrefabInstance: {fileID: 1174113767}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &1174113769 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8743931446865445996, guid: 9e7b186f1d670b64da92f7ca382c5d26,
     type: 3}
   m_PrefabInstance: {fileID: 1174113767}
   m_PrefabAsset: {fileID: 0}
@@ -2237,6 +2259,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6077121034909925790, guid: 9e7b186f1d670b64da92f7ca382c5d26,
+        type: 3}
+      propertyPath: m_Name
+      value: Gear Parent 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6478665818361814922, guid: 9e7b186f1d670b64da92f7ca382c5d26,
         type: 3}
       propertyPath: m_Name
@@ -2247,6 +2274,12 @@ PrefabInstance:
 --- !u!224 &1455905090 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4799654116636532093, guid: 9e7b186f1d670b64da92f7ca382c5d26,
+    type: 3}
+  m_PrefabInstance: {fileID: 1455905089}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &1455905091 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8743931446865445996, guid: 9e7b186f1d670b64da92f7ca382c5d26,
     type: 3}
   m_PrefabInstance: {fileID: 1455905089}
   m_PrefabAsset: {fileID: 0}
@@ -2261,6 +2294,7 @@ GameObject:
   - component: {fileID: 1482717410}
   - component: {fileID: 1482717411}
   - component: {fileID: 1482717412}
+  - component: {fileID: 1482717413}
   m_Layer: 5
   m_Name: Gearbox Inventory Slots
   m_TagString: Untagged
@@ -2337,6 +2371,30 @@ MonoBehaviour:
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+--- !u!114 &1482717413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482717409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cb65ac07d6a55048973841aa19ede91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gearPrefabs:
+  - {fileID: 6743440185301171838, guid: 06226935b0559de46aa0f6c85a71584c, type: 3}
+  - {fileID: 6743440185301171838, guid: 5c954715103e2f745b193c27abbe1513, type: 3}
+  - {fileID: 6743440185301171838, guid: 59d57743dfe12b344a71211432d4cb8a, type: 3}
+  - {fileID: 6743440185301171838, guid: 871a4e6e74a3533468fc14690cf46035, type: 3}
+  - {fileID: 6743440185301171838, guid: 30096b9d38860e24a82f6a9f4a67a979, type: 3}
+  gearParents:
+  - {fileID: 2480865703390511299}
+  - {fileID: 1751608918}
+  - {fileID: 1455905091}
+  - {fileID: 1174113769}
+  - {fileID: 264745616}
 --- !u!1 &1495683386
 GameObject:
   m_ObjectHideFlags: 0
@@ -2729,6 +2787,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6077121034909925790, guid: 9e7b186f1d670b64da92f7ca382c5d26,
+        type: 3}
+      propertyPath: m_Name
+      value: Gear Parent 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6478665818361814922, guid: 9e7b186f1d670b64da92f7ca382c5d26,
         type: 3}
       propertyPath: m_Name
@@ -2739,6 +2802,12 @@ PrefabInstance:
 --- !u!224 &1751608917 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4799654116636532093, guid: 9e7b186f1d670b64da92f7ca382c5d26,
+    type: 3}
+  m_PrefabInstance: {fileID: 1751608916}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &1751608918 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8743931446865445996, guid: 9e7b186f1d670b64da92f7ca382c5d26,
     type: 3}
   m_PrefabInstance: {fileID: 1751608916}
   m_PrefabAsset: {fileID: 0}
@@ -2996,6 +3065,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6077121034909925790, guid: 9e7b186f1d670b64da92f7ca382c5d26,
+        type: 3}
+      propertyPath: m_Name
+      value: Gear Parent 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6478665818361814922, guid: 9e7b186f1d670b64da92f7ca382c5d26,
         type: 3}
       propertyPath: m_Name
@@ -3006,6 +3080,12 @@ PrefabInstance:
 --- !u!224 &2480865703390511298 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4799654116636532093, guid: 9e7b186f1d670b64da92f7ca382c5d26,
+    type: 3}
+  m_PrefabInstance: {fileID: 2480865703390511297}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &2480865703390511299 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8743931446865445996, guid: 9e7b186f1d670b64da92f7ca382c5d26,
     type: 3}
   m_PrefabInstance: {fileID: 2480865703390511297}
   m_PrefabAsset: {fileID: 0}
