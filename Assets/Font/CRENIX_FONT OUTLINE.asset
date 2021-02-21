@@ -79,7 +79,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _OutlineTex:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 0, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Ambient: 0.5
@@ -107,7 +107,7 @@ Material:
     - _OutlineSoftness: 0
     - _OutlineUVSpeedX: 0
     - _OutlineUVSpeedY: 0
-    - _OutlineWidth: 0
+    - _OutlineWidth: 0.6
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10
     - _ScaleRatioA: 0.9
@@ -154,11 +154,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: CRENIX_FONT SDF
+  m_Name: CRENIX_FONT OUTLINE
   m_EditorClassIdentifier: 
-  hashCode: 797722870
+  hashCode: -777437177
   material: {fileID: -858808615366948774}
-  materialHashCode: -947564394
+  materialHashCode: 277993543
   m_Version: 1.1.0
   m_SourceFontFileGUID: e52ed733fff67b546a18396c636379c8
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: e52ed733fff67b546a18396c636379c8,
