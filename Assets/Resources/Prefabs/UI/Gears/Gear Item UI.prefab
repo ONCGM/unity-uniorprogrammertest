@@ -11,8 +11,10 @@ GameObject:
   - component: {fileID: 3094939327539146800}
   - component: {fileID: 8941993192355614055}
   - component: {fileID: 1001171327108798398}
+  - component: {fileID: 8580026253621631458}
+  - component: {fileID: 2046339347922171323}
   m_Layer: 5
-  m_Name: Gear UI
+  m_Name: Gear Item UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,3 +76,50 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8580026253621631458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8336374880193680906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e11293c775120774fad01e0e6b0bf239, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!60 &2046339347922171323
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8336374880193680906}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.9632263, y: 78.25754}
+      - {x: -44.5719, y: 61.39386}
+      - {x: -67.20056, y: 25.678665}
+      - {x: -66.3577, y: -20.499573}
+      - {x: -43.500305, y: -52.86255}
+      - {x: 2.770935, y: -65.47087}
+      - {x: 40.793358, y: -48.320377}
+      - {x: 65.059616, y: -8.546032}
+      - {x: 63.586685, y: 31.622364}
+      - {x: 37.428688, y: 65.863014}

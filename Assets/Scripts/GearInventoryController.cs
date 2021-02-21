@@ -36,5 +36,13 @@ public class GearInventoryController : MonoBehaviour {
         foreach(var gear in FindObjectsOfType<Gear>()) {
             gear.DeSpawn();
         }
+        
+        foreach(var uiGear in FindObjectsOfType<GearUI>()) {
+            uiGear.DeSpawn();
+        }
+
+        for(var i = 0; i < gearParents.Count; i++) {
+            if(gearPrefabs[i] != null) Instantiate(gearPrefabs[i], gearParents[i]);
+        }
     }
 }
