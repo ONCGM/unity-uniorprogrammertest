@@ -14,19 +14,27 @@ public class GearUI : MonoBehaviour, IPointerDownHandler, IPointerUpHandler {
 
     private bool stickToMouse;
     private Camera gameCamera;
+    private GearSlotUI slot;
 
     private void Awake() {
         gameCamera = FindObjectOfType<Camera>();
+        transform.localScale = Vector3.zero;
+        transform.DOScale(Vector3.one, animationDuration).SetEase(Ease.OutSine);
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        Debug.Log($"Triggered the collision event with {other.name}.");
+        if(!other.GetComponent<GearSlotUI>() || other.GetComponent<GearSlotUI>() == slot) return;
+        slot = other.GetComponent<GearSlotUI>();
+        if(slot.HasGear) return;
+        slot.HasGear = true;
+        transform.position = slot.transform.position;
+        stickToMouse = false;
     }
 
     /// <summary>
     /// Removes the gear from the world.
     /// </summary>
-    public void DeSpawn() => transform.DOScale(Vector3.zero, animationDuration).SetEase(Ease.OutBack).onComplete = () => Destroy(gameObject);
+    public void DeSpawn() => transform.DOScale(Vector3.zero, animationDuration).SetEase(Ease.OutSine).onComplete = () => Destroy(gameObject);
 
     private void Update() {
         if(!stickToMouse) return;
@@ -36,9 +44,9 @@ public class GearUI : MonoBehaviour, IPointerDownHandler, IPointerUpHandler {
 
     public void OnPointerDown(PointerEventData eventData) {
         stickToMouse = true;
+        if(slot != null) slot.HasGear = false;
+        slot = null;
     }
 
-    public void OnPointerUp(PointerEventData eventData) {
-        stickToMouse = false;
-    }
+    public void OnPointerUp(PointerEventData eventData) => stickToMouse = false;
 }

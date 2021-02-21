@@ -11,38 +11,28 @@ public class GearInventoryController : MonoBehaviour {
     [SerializeField] private List<GameObject> gearPrefabs = new List<GameObject>();
     [SerializeField] private List<Transform> gearParents = new List<Transform>();
     
-    // Events.
-    /// <summary>
-    /// Invoked by the reset button in the UI. Repositions the gears in the inventory.
-    /// </summary>
-    public static Action OnResetInventory;
-
     // Initialization.
     private void Awake() {
-        OnResetInventory += ResetInventory;
-        
-        OnResetInventory.Invoke();
+        ResetInventory();
     }
 
-    // Unsubscribes from the events.
-    private void OnDestroy() {
-        OnResetInventory -= ResetInventory;
-    }
-
+    /// <summary>
+    /// Resets the gears in their position on the inventory.
+    /// </summary>
+    public void ResetGears() => ResetInventory();
+    
     /// <summary>
     /// Reset the gears in position.
     /// </summary>
     private void ResetInventory() {
-        foreach(var gear in FindObjectsOfType<Gear>()) {
-            gear.DeSpawn();
-        }
-        
-        foreach(var uiGear in FindObjectsOfType<GearUI>()) {
-            uiGear.DeSpawn();
-        }
+        foreach(var gear in FindObjectsOfType<Gear>()) gear.DeSpawn();
+
+        foreach(var uiGear in FindObjectsOfType<GearUI>()) uiGear.DeSpawn();
 
         for(var i = 0; i < gearParents.Count; i++) {
-            if(gearPrefabs[i] != null) Instantiate(gearPrefabs[i], gearParents[i]);
+            if(gearPrefabs[i] != null) continue;
+            var gear = Instantiate(gearPrefabs[i], transform);
+            gear.transform.position = gearParents[i].transform.position;
         }
     }
 }

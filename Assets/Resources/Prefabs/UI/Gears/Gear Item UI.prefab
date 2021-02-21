@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1001171327108798398}
   - component: {fileID: 8580026253621631458}
   - component: {fileID: 2046339347922171323}
+  - component: {fileID: 8749328209355006084}
   m_Layer: 5
   m_Name: Gear Item UI
   m_TagString: Untagged
@@ -88,6 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e11293c775120774fad01e0e6b0bf239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationDuration: 0.42
 --- !u!60 &2046339347922171323
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -123,3 +125,23 @@ PolygonCollider2D:
       - {x: 65.059616, y: -8.546032}
       - {x: 63.586685, y: 31.622364}
       - {x: 37.428688, y: 65.863014}
+--- !u!114 &8749328209355006084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8336374880193680906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 1
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
