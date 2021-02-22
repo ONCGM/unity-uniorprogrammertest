@@ -26,11 +26,13 @@ public class GearInventoryController : MonoBehaviour {
         uiSlots = FindObjectsOfType<GearSlotUI>().ToList();
         gearPins = FindObjectsOfType<GearPin>().ToList();
         waitForSeconds = new WaitForSeconds(gearSpawnDelay);
-        
-        for(var i = 0; i < gearParents.Count; i++) {
-            if(gearPrefabs[i] == null || gearParents[i] == null) continue;
-            Instantiate(gearPrefabs[i], gearParents[i].transform.position, Quaternion.identity, transform);
+
+        var parents = new Queue<Transform>(gearParents);
+        var gears = new Queue<GameObject>(gearPrefabs);
+
+        foreach(var parent in parents) {
             yield return waitForSeconds;
+            Instantiate(gears.Dequeue(), parent.position, parent.rotation, transform);
         }
     }
 
@@ -53,7 +55,7 @@ public class GearInventoryController : MonoBehaviour {
         
         for(var i = 0; i < gearParents.Count; i++) {
             if(gearPrefabs[i] == null || gearParents[i] == null) continue;
-            Instantiate(gearPrefabs[i], gearParents[i].transform.position, Quaternion.identity, transform);
+            Instantiate(gearPrefabs[i], gearParents[i].position, Quaternion.identity, transform);
         }
     }
 }

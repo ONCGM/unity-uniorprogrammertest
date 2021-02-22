@@ -26,6 +26,7 @@ public class Gear : MonoBehaviour {
     /// </summary>
     public GearPin Pin { get; set; }
 
+    // Setup, Animations and references.
     private void Awake() {
         gameCamera = FindObjectOfType<Camera>();
         transform.position += slamPositionOffset;
@@ -51,12 +52,13 @@ public class Gear : MonoBehaviour {
         DeSpawn();
     }
 
+    // Check if the player clicked on the gear.
     private void Update() {
         if(!Input.GetMouseButtonDown(0)) return;
         var mousePosition = (Vector2) gameCamera.ScreenToWorldPoint(Input.mousePosition);
         var hit = Physics2D.Raycast(mousePosition, Vector2.zero, gearLayer);
 
         if(hit.collider == null) return;
-        if(hit.collider.transform == transform) SnapUiGearToMouse();
+        if(hit.collider.transform.GetInstanceID() == transform.GetInstanceID()) SnapUiGearToMouse();
     }
 }

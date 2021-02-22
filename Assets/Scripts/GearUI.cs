@@ -15,6 +15,7 @@ public class GearUI : MonoBehaviour, IPointerDownHandler, IPointerUpHandler {
     [Header("Settings")] 
     [SerializeField] private GameObject worldGearPrefab;
 
+    // Variables and components.
     private bool stickToMouse;
     private Camera gameCamera;
     private GearSlotUI slot;

@@ -14,6 +14,7 @@ public static class GearPinController {
         OnGearsReset += ResetGears;
     }
 
+    // Variables.
     private const int MAXGears = 5;
     private static List<Gear> gears = new List<Gear>();
     
