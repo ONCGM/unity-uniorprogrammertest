@@ -17,7 +17,9 @@ public class GearPin : MonoBehaviour {
     /// <summary>
     /// Updates the HasGear property. 
     /// </summary>
-    public void SetGear(bool value) => HasGear = value;
+    public void SetGear(bool value) {
+        HasGear = value;
+    }
 
     // The gear in this slot.
     private Gear currentGear;

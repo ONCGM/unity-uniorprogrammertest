@@ -17,6 +17,7 @@ public class Gear : MonoBehaviour {
     
     [Header("Settings")] 
     [SerializeField] private GameObject uiGearPrefab;
+    [SerializeField] private LayerMask gearLayer;
 
     // Components.
     private Camera gameCamera;
@@ -53,8 +54,8 @@ public class Gear : MonoBehaviour {
     private void Update() {
         if(!Input.GetMouseButtonDown(0)) return;
         var mousePosition = (Vector2) gameCamera.ScreenToWorldPoint(Input.mousePosition);
-        var hit = Physics2D.Raycast(mousePosition, Vector2.zero);
-        
+        var hit = Physics2D.Raycast(mousePosition, Vector2.zero, gearLayer);
+
         if(hit.collider == null) return;
         if(hit.collider.transform == transform) SnapUiGearToMouse();
     }
