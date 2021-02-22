@@ -26,6 +26,7 @@
         <e p="Scripts" t="Include">
           <e p="Gear.cs" t="Include" />
           <e p="GearInventoryController.cs" t="Include" />
+          <e p="GearPin.cs" t="Include" />
           <e p="GearSlotUI.cs" t="Include" />
           <e p="GearUI.cs" t="Include" />
         </e>

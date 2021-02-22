@@ -132,5 +132,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gear Item UI Blue
       objectReference: {fileID: 0}
+    - target: {fileID: 8580026253621631458, guid: c42947420bbf67e4d8ce4f8678ae130e,
+        type: 3}
+      propertyPath: worldGearPrefab
+      value: 
+      objectReference: {fileID: 2534162584066144784, guid: 7327dd1c8220d534ca0d6bffd15190dd,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c42947420bbf67e4d8ce4f8678ae130e, type: 3}

@@ -1,29 +1,23 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// Used by the gears as a anchor point in the UI so they can snap to position.
-/// </summary>
-public class GearSlotUI : MonoBehaviour {
+public class GearPin : MonoBehaviour {
     /// <summary>
     /// Does this slot already have a gear on it.
     /// </summary>
     public bool HasGear { get; private set; } = true;
 
     // The gear in this slot.
-    private GearUI currentGear;
+    private Gear currentGear;
 
     // Collision events.
     private void OnTriggerEnter2D(Collider2D other) {
         if(HasGear) return;
         if(!other.GetComponent<GearUI>()) return;
-
-        HasGear = true;
-        currentGear = other.GetComponent<GearUI>();
-        currentGear.ReleaseFromCursor();
+        currentGear = other.GetComponent<GearUI>().SpawnGear();
         currentGear.transform.position = transform.position;
+        HasGear = true;
     }
 
     private void OnTriggerExit2D(Collider2D other) {

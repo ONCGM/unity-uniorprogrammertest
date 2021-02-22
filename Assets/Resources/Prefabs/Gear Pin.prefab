@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 6370239654757512766}
   - component: {fileID: 7716940580243655791}
   - component: {fileID: 4779072685747847384}
+  - component: {fileID: -786297077716478726}
   m_Layer: 0
   m_Name: Gear Pin
   m_TagString: Untagged
@@ -130,6 +131,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &-786297077716478726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5156693000202758757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b440555078ec0ec46b722ce7bedddab5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5638454256270138597
 GameObject:
   m_ObjectHideFlags: 0

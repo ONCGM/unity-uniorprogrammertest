@@ -90,6 +90,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animationDuration: 0.42
+  worldGearPrefab: {fileID: 3830060188224191760, guid: c8df0223d4558144c8fc6f4f6b1eac17,
+    type: 3}
 --- !u!60 &2046339347922171323
 PolygonCollider2D:
   m_ObjectHideFlags: 0

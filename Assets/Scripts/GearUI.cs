@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -11,6 +12,9 @@ using UnityEngine.EventSystems;
 public class GearUI : MonoBehaviour, IPointerDownHandler, IPointerUpHandler {
     [Header("Animation Settings")]
     [SerializeField, Range(0.05f, 2f)] private float animationDuration = 0.42f;
+
+    [Header("Settings")] 
+    [SerializeField] private GameObject worldGearPrefab;
 
     private bool stickToMouse;
     private Camera gameCamera;
@@ -43,4 +47,18 @@ public class GearUI : MonoBehaviour, IPointerDownHandler, IPointerUpHandler {
     /// Releases the cursor lock. 
     /// </summary>
     public void ReleaseFromCursor() => stickToMouse = false;
+    
+    /// <summary>
+    /// Attaches to the cursor.
+    /// </summary>
+    public void AttachToCursor() => stickToMouse = true;
+
+    /// <summary>
+    /// Spawns a gear in the world with the same color that this gear has.
+    /// </summary>
+    /// <returns> A gear component.</returns>
+    public Gear SpawnGear() {
+        transform.DOScale(Vector3.one, animationDuration * 0.5f).SetEase(Ease.OutFlash).onComplete = () => Destroy(gameObject);
+        return Instantiate(worldGearPrefab, Vector3.zero, Quaternion.identity).GetComponent<Gear>();
+    }
 }

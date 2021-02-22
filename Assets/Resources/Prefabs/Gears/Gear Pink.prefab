@@ -77,5 +77,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7605235813290140075, guid: c8df0223d4558144c8fc6f4f6b1eac17,
+        type: 3}
+      propertyPath: uiGearPrefab
+      value: 
+      objectReference: {fileID: 6743440185301171838, guid: 59d57743dfe12b344a71211432d4cb8a,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8df0223d4558144c8fc6f4f6b1eac17, type: 3}
