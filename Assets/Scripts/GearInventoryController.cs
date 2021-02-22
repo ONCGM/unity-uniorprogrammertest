@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 /// <summary>
@@ -31,7 +32,7 @@ public class GearInventoryController : MonoBehaviour {
 
         for(var i = 0; i < gearParents.Count; i++) {
             if(gearPrefabs[i] == null) continue;
-            Instantiate(gearPrefabs[i], transform).transform.position = gearParents[i].transform.position;
+            Instantiate(gearPrefabs[i], gearParents[i].transform.position, Quaternion.identity, transform);
         }
     }
 }

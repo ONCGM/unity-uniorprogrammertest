@@ -17,6 +17,7 @@ public class GearPin : MonoBehaviour {
         if(!other.GetComponent<GearUI>()) return;
         currentGear = other.GetComponent<GearUI>().SpawnGear();
         currentGear.transform.position = transform.position;
+        currentGear.transform.parent = transform;
         HasGear = true;
     }
 

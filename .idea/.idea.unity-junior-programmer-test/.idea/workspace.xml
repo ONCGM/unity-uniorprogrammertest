@@ -2,27 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdbb6c1d-992f-4e86-8136-7b7751345920" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GearPin.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GearPin.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.unity-junior-programmer-test/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity-junior-programmer-test/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.unity-junior-programmer-test/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity-junior-programmer-test/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.unity-junior-programmer-test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity-junior-programmer-test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Gear Pin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Gear Pin.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Gears/Gear Blue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Gears/Gear Blue.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Gears/Gear Green.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Gears/Gear Green.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Gears/Gear Pink.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Gears/Gear Pink.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Gears/Gear Purple.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Gears/Gear Purple.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Gears/Gear Yellow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Gears/Gear Yellow.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Gears/Gear.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Gears/Gear.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/Gears/Gear Item UI Blue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/Gears/Gear Item UI Blue.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/Gears/Gear Item UI Green.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/Gears/Gear Item UI Green.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/Gears/Gear Item UI Pink.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/Gears/Gear Item UI Pink.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/Gears/Gear Item UI Purple.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/Gears/Gear Item UI Purple.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/Gears/Gear Item UI Yellow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/Gears/Gear Item UI Yellow.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/Gears/Gear Item UI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/Gears/Gear Item UI.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gear.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gear.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GearSlotUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GearSlotUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GearUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GearUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GearInventoryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GearInventoryController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GearPin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GearPin.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,10 +31,10 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/GearSlot.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GearInventoryController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GearSlotUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GearPin.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GearUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GearPin.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GearInventoryController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Gear.cs" />
     </changedPaths>
   </component>
@@ -103,6 +86,7 @@
       <updated>1613917064291</updated>
       <workItem from="1613917068869" duration="9835000" />
       <workItem from="1613947595793" duration="2953000" />
+      <workItem from="1613992813604" duration="1879000" />
     </task>
     <servers />
   </component>
