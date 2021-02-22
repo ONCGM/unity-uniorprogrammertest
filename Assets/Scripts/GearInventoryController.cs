@@ -49,6 +49,8 @@ public class GearInventoryController : MonoBehaviour {
         foreach(var uiGear in FindObjectsOfType<GearUI>()) uiGear.DeSpawn();
         foreach(var slotUI in uiSlots) slotUI.SetGear(true);
 
+        GearPinController.OnGearsReset.Invoke();
+        
         for(var i = 0; i < gearParents.Count; i++) {
             if(gearPrefabs[i] == null || gearParents[i] == null) continue;
             Instantiate(gearPrefabs[i], gearParents[i].transform.position, Quaternion.identity, transform);

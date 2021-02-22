@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdbb6c1d-992f-4e86-8136-7b7751345920" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NuggetDialog.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.unity-junior-programmer-test/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity-junior-programmer-test/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.unity-junior-programmer-test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity-junior-programmer-test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Gears/Gear.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Gears/Gear.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gear.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gear.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GearInventoryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GearInventoryController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GearPin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GearPin.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GearSlotUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GearSlotUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GearUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GearUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GearPinController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GearPinController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,17 +28,23 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gear.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GearPinController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NuggetDialog.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GearSlotUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa13052.8461/EnemyHealthBarUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GearPin.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/GearSlot.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GearSlotUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GearInventoryController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GearUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Gear.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GearInventoryController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GearPin.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Gear.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GearPinController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/NuggetDialogController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/NuggetDialog.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1onKkqqj0sugbGHrarSjrHl19si" />
@@ -90,7 +95,7 @@
       <updated>1613917064291</updated>
       <workItem from="1613917068869" duration="9835000" />
       <workItem from="1613947595793" duration="2953000" />
-      <workItem from="1613992813604" duration="4105000" />
+      <workItem from="1613992813604" duration="7714000" />
     </task>
     <servers />
   </component>

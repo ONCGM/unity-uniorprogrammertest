@@ -46,6 +46,7 @@ public class Gear : MonoBehaviour {
     /// </summary>
     private void SnapUiGearToMouse() {
         Instantiate(uiGearPrefab, transform.position, Quaternion.identity, FindObjectOfType<GearInventoryController>().transform).GetComponent<GearUI>().AttachToCursor();
+        GearPinController.OnGearRemoved.Invoke(this);
         DeSpawn();
     }
 

@@ -1157,6 +1157,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 838081228}
+  - component: {fileID: 838081229}
   m_Layer: 5
   m_Name: Nugget
   m_TagString: Untagged
@@ -1185,6 +1186,21 @@ RectTransform:
   m_AnchoredPosition: {x: -304.3, y: 25.2}
   m_SizeDelta: {x: 468.27466, y: 507.3181}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &838081229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838081227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 703d16a47f0e9004bbd2dcafc77d6132, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speakingSpeed: 1.42
+  startingText: Encaixe as engrenagens em qualquer ordem!
+  taskDoneText: Yay, parabens. Task concluida!
 --- !u!1 &847684191
 GameObject:
   m_ObjectHideFlags: 0

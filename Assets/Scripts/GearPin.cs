@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
@@ -20,13 +21,23 @@ public class GearPin : MonoBehaviour {
 
     // The gear in this slot.
     private Gear currentGear;
-    
+
+    // Subscriptions.
+    private void Awake() {
+        GearPinController.OnGearsCompleted += RotationAnimation;
+        GearPinController.OnGearRemoved += (Gear g) => DOTween.Kill(gameObject);
+        GearPinController.OnGearsReset += () => DOTween.Kill(gameObject);
+    }
+
+    // Unsubscriptions.
+    private void OnDestroy()=> GearPinController.OnGearsCompleted -= RotationAnimation;
+
     // Rotation animation.
     private void RotationAnimation() {
         if(!HasGear) return;
         transform.DORotate(rotateClockwise ? Vector3.forward * 360f : Vector3.back * 360f, 
                 animationDuration, RotateMode.FastBeyond360).
-            SetEase(Ease.Linear).onComplete = RotationAnimation;
+            SetEase(Ease.Linear).SetId(gameObject).onComplete = RotationAnimation;
     }
 
     // Collision events.
@@ -38,15 +49,11 @@ public class GearPin : MonoBehaviour {
         currentGear.transform.parent = transform;
         currentGear.Pin = this;
         HasGear = true;
-        
+        GearPinController.OnGearPlaced.Invoke(currentGear);
     }
 
     private void OnTriggerExit2D(Collider2D other) {
-        if(currentGear == null) {
-            HasGear = false;
-            return;
-        }
-        
-        if(other.gameObject == currentGear.gameObject) HasGear = false;
+        if(currentGear != null) return;
+        HasGear = false;
     }
 }
