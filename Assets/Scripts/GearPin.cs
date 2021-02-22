@@ -37,7 +37,7 @@ public class GearPin : MonoBehaviour {
     // Rotation animation.
     private void RotationAnimation() {
         if(!HasGear) return;
-        transform.DORotate(rotateClockwise ? Vector3.forward * 360f : Vector3.back * 360f, 
+        transform.DORotate(rotateClockwise ? Vector3.back * 360f : Vector3.forward * 360f, 
                 animationDuration, RotateMode.FastBeyond360).
             SetEase(Ease.Linear).SetId(gameObject).onComplete = RotationAnimation;
     }
