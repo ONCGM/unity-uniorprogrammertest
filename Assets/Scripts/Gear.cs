@@ -20,6 +20,10 @@ public class Gear : MonoBehaviour {
 
     // Components.
     private Camera gameCamera;
+    /// <summary>
+    /// The gear pin that this gear is attached to.
+    /// </summary>
+    public GearPin Pin { get; set; }
 
     private void Awake() {
         gameCamera = FindObjectOfType<Camera>();
@@ -32,7 +36,10 @@ public class Gear : MonoBehaviour {
     /// <summary>
     /// Removes the gear from the world.
     /// </summary>
-    public void DeSpawn() => transform.DOScale(Vector3.zero, animationDuration).SetEase(Ease.OutFlash).onComplete = () => Destroy(gameObject);
+    public void DeSpawn() => transform.DOScale(Vector3.zero, animationDuration).SetEase(Ease.OutFlash).onComplete = () => {
+        Destroy(gameObject);
+        Pin.SetGear(false);
+    };
 
     /// <summary>
     /// Spawns an UI gear and attaches it to the cursor position.

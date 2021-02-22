@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
-using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -58,7 +57,11 @@ public class GearUI : MonoBehaviour, IPointerDownHandler, IPointerUpHandler {
     /// </summary>
     /// <returns> A gear component.</returns>
     public Gear SpawnGear() {
-        transform.DOScale(Vector3.one, animationDuration * 0.5f).SetEase(Ease.OutFlash).onComplete = () => Destroy(gameObject);
+        GetComponent<Collider2D>().enabled = false;
+        transform.DOScale(Vector3.zero, animationDuration * 0.5f).SetEase(Ease.OutFlash).onComplete = () => {
+            ReleaseFromCursor();
+            Destroy(gameObject);
+        };
         return Instantiate(worldGearPrefab, Vector3.zero, Quaternion.identity).GetComponent<Gear>();
     }
 }

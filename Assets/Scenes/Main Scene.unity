@@ -448,6 +448,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gear Slot (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8384669447988647921, guid: 9e7b186f1d670b64da92f7ca382c5d26,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e7b186f1d670b64da92f7ca382c5d26, type: 3}
 --- !u!224 &264745615 stripped
@@ -1453,6 +1458,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 338595002}
     m_Modifications:
+    - target: {fileID: -786297077716478726, guid: 10c494713d4c64f43b2aa0c4702c7c97,
+        type: 3}
+      propertyPath: rotateClockwise
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 65720709528336943, guid: 10c494713d4c64f43b2aa0c4702c7c97,
         type: 3}
       propertyPath: m_SortingOrder
@@ -1893,6 +1903,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gear Slot (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8384669447988647921, guid: 9e7b186f1d670b64da92f7ca382c5d26,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e7b186f1d670b64da92f7ca382c5d26, type: 3}
 --- !u!224 &1174113768 stripped
@@ -1995,6 +2010,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 338595002}
     m_Modifications:
+    - target: {fileID: -786297077716478726, guid: 10c494713d4c64f43b2aa0c4702c7c97,
+        type: 3}
+      propertyPath: rotateClockwise
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 65720709528336943, guid: 10c494713d4c64f43b2aa0c4702c7c97,
         type: 3}
       propertyPath: m_SortingOrder
@@ -2280,6 +2300,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gear Slot (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8384669447988647921, guid: 9e7b186f1d670b64da92f7ca382c5d26,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e7b186f1d670b64da92f7ca382c5d26, type: 3}
 --- !u!224 &1455905090 stripped
@@ -2406,6 +2431,7 @@ MonoBehaviour:
   - {fileID: 1455905091}
   - {fileID: 1174113769}
   - {fileID: 264745616}
+  gearSpawnDelay: 0.2
 --- !u!1 &1495683386
 GameObject:
   m_ObjectHideFlags: 0
@@ -2807,6 +2833,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Gear Slot (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8384669447988647921, guid: 9e7b186f1d670b64da92f7ca382c5d26,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e7b186f1d670b64da92f7ca382c5d26, type: 3}

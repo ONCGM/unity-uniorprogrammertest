@@ -12,6 +12,11 @@ public class GearSlotUI : MonoBehaviour {
     /// </summary>
     public bool HasGear { get; private set; } = true;
 
+    /// <summary>
+    /// Updates the HasGear property. 
+    /// </summary>
+    public void SetGear(bool value) => HasGear = value;
+
     // The gear in this slot.
     private GearUI currentGear;
 
